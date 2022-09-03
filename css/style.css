@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: 1280px;
+  background-color: lightcoral
+}
+.gnb {
+  width: 1280px;
+  margin: 0px auto;
+}
