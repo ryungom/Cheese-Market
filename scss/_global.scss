@@ -1,0 +1,12 @@
+*:focus {
+	border:none;
+}
+.wrapper {
+  background: pink;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}

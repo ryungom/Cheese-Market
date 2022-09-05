@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>치즈마켓</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     <header id="header">
@@ -26,10 +25,16 @@
           </ul>
           <ul>
             <li>
-              <a href="#none">장바구니</a>
+              <a href="#none" class="basket">
+                <img src="./asset/icon-shopping-cart.svg" alt="장바구니 바로가기 입니다.">
+                <span>장바구니</span>
+              </a>
             </li>
             <li>
-              <a href="#none">로그인</a>
+              <a href="#none" class="login">
+                <img src="./asset/icon-user.svg" alt="로그인 바로가기 입니다.">
+                <span>로그인</span>
+              </a>
             </li>
           </ul>
         </nav>
