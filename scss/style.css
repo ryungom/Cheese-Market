@@ -70,18 +70,21 @@ table {
   border: none;
 }
 
+.mainWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto 200px;
+}
+
 .wrapper {
   background: pink;
   max-width: 1280px;
   margin: 0px auto;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 #header {
+  grid-row: 1/2;
   padding: 22px 0;
 }
 #header .gnb {
@@ -154,5 +157,54 @@ body {
 }
 
 #footer {
-  background: lightgreen;
+  grid-row: 3/4;
+}
+#footer nav {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+}
+#footer nav .footer_gnb {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer nav .footer_gnb li {
+  font: 14px/1 "arial";
+}
+#footer nav .footer_gnb li::after {
+  margin-left: 10px;
+  content: "|";
+  display: inline-block;
+}
+#footer nav .footer_gnb li:last-child::after {
+  display: none;
+}
+#footer nav .sns {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+#footer nav .sns li a {
+  display: block;
+}
+#footer .info {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #666;
+  font: 14px/1 "arial";
+}
+#footer .info strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#footer .info address {
+  margin-bottom: 10px;
+}
+#footer .info span {
+  display: block;
+  margin-top: 10px;
 }
