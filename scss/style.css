@@ -155,6 +155,68 @@ table {
 #main {
   background: lightyellow;
 }
+#main .carousel {
+  width: 100%;
+  height: 500px;
+  background: #F2F2F2;
+  position: relative;
+}
+#main .carousel .slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#main .carousel .slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#main .carousel .slides li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main .carousel .arrows {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+#main .carousel .arrows button {
+  background: center/cover no-repeat url("../asset/icon-rhigt-arrow.svg");
+  border: none;
+  cursor: pointer;
+}
+#main .carousel .arrows button.left {
+  transform: rotate(180deg);
+}
+#main .carousel .mainGnb {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -40px;
+}
+#main .carousel .mainGnb li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+#main .carousel .mainGnb li.on {
+  background: #000;
+}
+#main .carousel .mainGnb li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 #footer {
   grid-row: 3/4;
