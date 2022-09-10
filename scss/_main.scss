@@ -5,6 +5,7 @@
     height: 500px;
     background: #F2F2F2;
     position: relative;
+
     .slides {
       position: relative;
       width: 100%;
@@ -59,6 +60,48 @@
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+  .collection {
+    padding: 80px 0 180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    li {
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #C4C4C4;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+      div {
+        span {
+          &:nth-of-type(1) {
+            font: 16px/22px "arial"; color: #767676;
+            margin-bottom: 10px;
+          }
+          &:nth-of-type(2) {
+            font:bold 24px/30px "arial"; color: #000;
+          }
+        }
+        h2 {
+          font: 18px/22px "arial"; color: #000;
+          margin-bottom: 10px;
+        }
+
+      }
+      &:nth-child(1) {
+        grid-column: 1 / 2;
+      }
+      &:nth-child(2) {
+        grid-column: 2 / 3;
+      }
+      &:nth-child(3) {
+        grid-column: 3 / 4;
       }
     }
   }
