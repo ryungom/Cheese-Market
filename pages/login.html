@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="../scss/style.css">
+  </head>
+<body>
+  <div class="loginWrapper">
+    <h1>
+      <img src="../asset/Logo-hodu.png" alt="로고이미지 입니다">
+    </h1>
+    <section class="loginModal">
+      <ul class="tabGnb">
+        <li><a href="#buy">구매회원 로그인</a></li>
+        <li><a href="#sell">판매회원 로그인</a></li>
+      </ul>
+      <form action="" method="">
+        <fieldset id="buy">
+          <legend class="ir">구매회원 로그인 모달 입니다.</legend>
+          <label for="buyLoginId" class="ir">로그인 아이디 입니다.</label>
+          <input id="buyLoginId" type="text" placeholder="아이디" required autofocus>
+          <label for="buyLoginPass" class="ir">로그인 비밀번호 입니다.</label>
+          <input id="buyLoginPass" type="password" placeholder="비밀번호" required minlength="8">
+        </fieldset>
+        <fieldset id="sell">
+          <legend class="ir">판매회원 로그인 모달 입니다.</legend>
+          <label for="sellLoginId" class="ir">로그인 아이디 입니다.</label>
+          <input id="sellLoginId" type="text" placeholder="아이디" required autofocus>
+          <label for="sellLoginPass" class="ir">로그인 비밀번호 입니다.</label>
+          <input id="sellLoginPass" type="password" placeholder="비밀번호" required minlength="8">
+        </fieldset>
+        <strong>로그인실패시 메세지</strong>
+        <button type="submit">로그인</button>
+      </form>
+      <ul class="join">
+        <li><a href="#none">회원가입</a></li>
+        <li><a href="#none">비밀번호찾기</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

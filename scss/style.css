@@ -76,6 +76,14 @@ table {
   grid-template-rows: 100px auto 200px;
 }
 
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0px auto;
