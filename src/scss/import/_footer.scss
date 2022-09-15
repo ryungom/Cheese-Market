@@ -8,14 +8,18 @@
     .footer_gnb {
       grid-column: 1 / 2;
       display: flex;
-      justify-content: space-between;
+      justify-content:space-between;
       align-items: center;
       li{
         font: 14px/1 "arial";
+        position: relative;
         &::after {
           margin-left: 10px;
           content: '|';
           display: inline-block;
+          position: absolute;
+          top: -2px;
+          right: -20px;
         }
         &:last-child::after {
           display: none;

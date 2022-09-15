@@ -24,6 +24,7 @@ time, mark, audio, video {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -66,12 +67,46 @@ table {
   clip: rect(1px 1px 1px 1px);
 }
 
+div, span, article, section, header, main, footer, p, ul, li, label, a, nav, h1, h2, h3, form, input, button, img, textarea {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.sl-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multi-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 *:focus {
   border: none;
 }
 
 .mainWrapper {
-  height: 100vh;
   display: grid;
   grid-template-rows: 100px auto 200px;
 }
@@ -108,7 +143,6 @@ table {
   left: 0px;
 }
 #main .carousel .slides li a {
-  display: block;
   width: 100%;
   height: 100%;
 }
@@ -231,7 +265,7 @@ table {
   right: 15px;
   width: 25px;
   height: 25px;
-  background: center/contain no-repeat url(../asset/search.svg);
+  background: center/contain no-repeat url(../../../asset/search.svg);
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
@@ -253,6 +287,9 @@ table {
 #header .gnb ul:last-child li a {
   display: block;
   text-align: center;
+}
+#header .gnb ul:last-child li a img {
+  width: 32px;
 }
 #header .gnb ul:last-child li a span {
   display: block;
@@ -276,11 +313,15 @@ table {
 }
 #footer nav .footer_gnb li {
   font: 14px/1 "arial";
+  position: relative;
 }
 #footer nav .footer_gnb li::after {
   margin-left: 10px;
   content: "|";
   display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: -20px;
 }
 #footer nav .footer_gnb li:last-child::after {
   display: none;

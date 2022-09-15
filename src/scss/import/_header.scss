@@ -34,7 +34,7 @@
                     right: 15px;
                     width: 25px;
                     height: 25px;
-                    background: center/contain no-repeat url(../asset/search.svg);
+                    background: center/contain no-repeat url(../../../asset/search.svg);
                     transform: translateY(-50%);
                     border: none;
                     cursor: pointer;
@@ -58,6 +58,9 @@
               a {
                 display: block;
                 text-align: center;
+                img {
+                  width: 32px;
+                }
                 span {
                   display: block;
                   font:0.8rem/1 "arial"
